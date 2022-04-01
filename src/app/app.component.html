@@ -1,0 +1,75 @@
+<!-- 
+  ! 8
+  <app-action-bar [inputDisplay]="false"></app-action-bar>
+<app-action-bar [inputDisplay]="true"></app-action-bar> -->
+
+<!-- 
+  ! 7
+  <div *ngIf="activate else elseTemplate">
+  <app-sqaure-flex></app-sqaure-flex>
+  <br>
+  <button type="button" (click)="activate = false">Activate False</button>
+</div>
+<ng-template #elseTemplate>
+  <button type="button" (click)="activate = true">Activate True</button>
+</ng-template> -->
+
+<!-- 
+  ! 6
+<app-action-bar [(counter)]="appCounter" [step]="10"></app-action-bar>
+Todo (TwoWay) 
+<app-action-bar [counter]="appCounter" (counterChange)="appCounter = $event"></app-action-bar>
+<br>
+<app-sqaure-flex [divWidth]="appCounter"></app-sqaure-flex> -->
+
+<!-- 
+  ! 5  
+<app-sqaure-flex [divHeight]="sqaureHeight" [divWidth]="sqaureWidth"></app-sqaure-flex>
+<br>
+<div>
+  Width: 
+  <button type="button" (click)="sqaureWidth = 50">50 px</button>
+  <button type="button" (click)="sqaureWidth = 100">100 px</button>
+  <button type="button" (click)="sqaureWidth = 200">200 px</button>
+</div>
+<br>
+<div>
+  Height: 
+  <button type="button" (click)="sqaureHeight = 50">50 px</button>
+  <button type="button" (click)="sqaureHeight = 100">100 px</button>
+  <button type="button" (click)="sqaureHeight = 200">200 px</button>
+</div> -->
+
+<!-- 
+  ! 4
+  <app-max-min-meter [minLabel]="appMinLabel" [maxLabel]="appMaxLabel" (minChange)="doAppMinChange($event)" (maxChange)="doAppMaxChange($event)"></app-max-min-meter> -->
+
+<!-- 
+  ! 3  
+<app-action-bar (numberChange)="testNumberChange($event)" [step]="5"></app-action-bar>
+<br>
+<app-action-bar (numberChange)="testNumberChange($event)" [step]="10"></app-action-bar>
+<br>
+<button type="button" (click)="testClick()">testEventBinding</button> -->
+
+<!--
+  ! 2
+<span>มา 4 คนจ่าย 3</span>
+<div>
+  <input #priceBuffetInput type="text" placeholder="ราคาบุฟเฟ่" />
+  <button (click)="calBuffet(priceBuffetInput.value)">คำนวน</button>
+</div>
+<span>คนละ {{ value }} บาท</span> -->
+
+<!-- 
+  ! 1
+Hello World Angular
+This is my title {{title}}
+<br/>
+My village ninja's name is {{ninjaName}}
+<button type="button" (click)="ninjaConsole()">Console ninja</button>
+<div>
+  <button type="button" (click)="changeNinjaName('Sakura')">Change Ninja Name to Sakura</button>
+  <button type="button" (click)="changeNinjaName('Sasuke')">Change Ninja Name to Sakura</button>
+  <button type="button" (click)="changeNinjaName('Naruto')">Change Ninja Name to Sakura</button>
+</div> -->
